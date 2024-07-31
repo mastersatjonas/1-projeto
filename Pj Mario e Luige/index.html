@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="(max-width: 800px)" href="style.css" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Mario Bros</title>
+</head>
+
+<body>
+    <div class="mascara-form" onclick="esconderform()"></div>
+
+    <header class="content">
+        <div class="logo-header">
+            <img src="./img/logo-header.png" alt="logo">
+
+        </div>
+        <nav>
+            <ul class="lista-menu">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="https://api.whatsapp.com/send?phone=5563984857405&text=Ol%C3%A1%2C%20gostaria%20dos%20seus%20servi%C3%A7os%20"
+                    target="_blank">Fale Conosco</a></li>
+                <li><a href="./nossos-servicos.html">Nossos Serviços</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+        </div>
+    </header>
+
+
+
+    <div class="container">
+        <div class="background">
+            <video loop autoplay muted class="conteudo-background ">
+                <source src="./img/video.mp4">
+            </video>
+
+            <div class="mascara-video"></div>
+        </div>
+
+        <div class="sobre-nos">
+            <img src="./img/logo.png" class="logo">
+            <p>
+                Encanadores Mario & Luigi - Resolvendo Seus Problemas Hidráulicos Com Estilo!
+            </p>
+            <p>
+                Você já se encontrou em uma situação de emergência com encanamento? Vazamentos inesperados, canos
+                entupidos ou torneiras que não param de pingar? Não se preocupe, porque estamos aqui para salvar o dia!
+                Apresentamos a vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!
+            </p>
+            <button onclick="mostraform()">Entre em Contato</button>
+        </div>
+
+        <img src="./img/mario.png" class="mario">
+        <a class="whatsapp"
+            href="https://api.whatsapp.com/send?phone=5563992354732&text=ol%C3%A1%2C%20gostaria%20de%20uma%20presta%C3%A7%C3%A3o%20de%20servi%C3%A7os%20do%20Mario"
+            target="_blank">
+            <img src="./img/whatsapp.png" />
+        </a>
+        
+
+        <form action="https://formcarry.com/s/Zx8a6wVVRml" method="POST" class="fale-conosco">
+            <input placeholder="Seu Nome" type="text" name="nome">
+            <input placeholder="Telefone" type="tel" name="Telefone">
+            <textarea placeholder="Digite seu problema" name="Duvidas"></textarea>
+            <button class="meu-botao" type="submit">Pedir Orçamento</button>
+        </form>
+    </div>
+</body>
+
+<script src="./script.js"></script>
+
+
+
+</html>
